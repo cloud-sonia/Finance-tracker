@@ -1,0 +1,220 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #FF69B4; /* Pink color for titles */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #FF69B4; /* Pink links */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #00BFFF; /* Aqua */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #FFB6C1; /* Light pink */
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta-buttons .btn {
+    padding: 10px 20px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.primary-btn {
+    background-color: #00BFFF;
+    color: white;
+}
+
+.secondary-btn {
+    background-color: white;
+    color: #00BFFF;
+    border: 2px solid #00BFFF;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.feature-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 20px;
+    background-color: #FFB6C1; /* Light pink */
+    text-align: center;
+}
+
+/* Metrics Section */
+.metrics {
+    padding: 50px 20px;
+    background-color: #f0f8ff; /* Aqua */
+    text-align: center;
+}
+
+.metric-item {
+    display: inline-block;
+    margin: 20px;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 50px 20px;
+    background-color: #00BFFF;
+    text-align: center;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #FF69B4;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light background for a fresh look */
+    color: #333; /* Dark text for better readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styles */
+.container {
+    max-width: 400px; /* Limit the width of the form */
+    margin: 50px auto; /* Center the form vertically and horizontally */
+    padding: 20px;
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header Styles */
+h1 {
+    text-align: center; /* Center the header text */
+    color: #4a4a4a; /* Slightly darker text for the header */
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Space inside the inputs */
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #ccc; /* Light border for the inputs */
+    border-radius: 4px; /* Rounded corners for the inputs */
+    font-size: 16px; /* Font size for better readability */
+}
+
+/* Button Styles */
+button {
+    width: 100%; /* Full width buttons */
+    padding: 10px; /* Space inside the button */
+    margin: 10px 0; /* Space between button and inputs */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners for the button */
+    background-color: #007bff; /* Bootstrap blue color */
+    color: white; /* White text on the button */
+    font-size: 16px; /* Font size for better readability */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Link Styles */
+a {
+    text-align: center; /* Center the link */
+    display: block; /* Make the link a block element */
+    margin-top: 10px; /* Space above the link */
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Link Hover Effect */
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

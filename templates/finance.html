@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker Landing Page</title>
+    <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/finance.css') }}">
+    </head>
+    
+</head>
+<body>
+    <header>
+        
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">FinanceTracker</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="/login">Login</a>
+            <a href="/signup">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Finance Tracker</h1>
+            <p>Your personal finance tool to track expenses, set goals, and grow your savings.</p>
+            <div class="cta-buttons">
+                <button class="btn primary-btn">Get Started</button>
+                <button class="btn secondary-btn">See Demo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Key Features</h2>
+        <div class="feature-box">
+            <div class="feature-item">
+                <i class="fas fa-wallet"></i>
+                <h3>Track Expenses</h3>
+                <p>Log all your expenses easily and categorize them for better financial insights.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-piggy-bank"></i>
+                <h3>Set Savings Goals</h3>
+                <p>Set and track savings goals to help you stay financially disciplined.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-chart-line"></i>
+                <h3>Visual Insights</h3>
+                <p>View your spending trends over time with charts and graphs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-item">
+            <p>"This app has totally changed the way I manage my finances!"</p>
+            <p>- Sarah, User</p>
+        </div>
+        <div class="testimonial-item">
+            <p>"I love the goal-setting feature, it keeps me on track with my savings."</p>
+            <p>- Michael, User</p>
+        </div>
+    </section>
+
+    <!-- Financial Metrics Section -->
+<section class="metrics">
+    <h2>Our Impact</h2>
+    <div class="metric-item">
+        <h3>{{ 10000 }}+</h3>
+        <p>Users Tracking Their Finances</p>
+    </div>
+    <div class="metric-item">
+        <h3>&#8358;{{10,0000}}+</h3>
+        <p>100 Million Naira Saved so Far By Our Users</p>
+    </div>
+</section>
+
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>How does the expense tracker work?</h3>
+            <p>You can log your daily, weekly, or monthly expenses and categorize them by type.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Is the finance tracker free?</h3>
+            <p>Yes, the core features of the finance tracker are completely free to use.</p>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Subscribe for Financial Tips</h2>
+        <p>Sign up for our newsletter and get exclusive financial tips directly to your inbox.</p>
+        <form action="#">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn primary-btn">Subscribe</button>
+            {% with messages = get_flashed_messages(with_categories=True) %}
+        {% if messages %}
+            <ul>
+                {% for category, message in messages %}
+                    <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+</section>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 FinanceTracker | <a href="#">About Us</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a></p>
+    </footer>
+
+</body>
+</html>
